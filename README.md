@@ -22,7 +22,7 @@ recursive package management with cross-platform builds via **cmake**:
 
 | Action  | Command                               | Description               |
 |---------|---------------------------------------|---------------------------|
-| Build   | `mulle-sde craft [--release|--debug]` | Builds into local `kitchen` folder |
+| Build   | `mulle-sde craft [--release/--debug]` | Builds into local `kitchen` folder |
 | Add     | `mulle-sde dependency add --c --github MulleFoundation MulleObjCUUIDFoundation` | Add MulleObjCUUIDFoundation to another mulle-sde project as a dependency |
 | Install | `mulle-sde install --prefix /usr/local https://github.com/MulleFoundation/MulleObjCUUIDFoundation.git` | Like `make install` |
 
