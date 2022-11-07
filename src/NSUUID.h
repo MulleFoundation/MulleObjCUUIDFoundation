@@ -80,3 +80,41 @@ static inline void   MulleUUIDBytesZeroVersioningBits( unsigned char bytes[ Mull
    bytes[ 6] &= 0x0F; // that bytes upper nybble is clobbered by the '4'
    bytes[ 8] &= 0x3F; // that bytes upper nybble is partially clobbered by 'y'
 }
+
+
+static inline unsigned int   MulleUUIDBytesGetVersion( unsigned char bytes[ MulleUUIDBytesLength])
+{
+   return( bytes[ 6] >> 4);
+}
+
+
+static inline int   MulleUTF8StringGetUUIDVersion( unsigned char s[ MulleUUIDStringLength])
+{
+   int   c;
+
+   c = s[ 14];
+   if( c >= '0' && c <='9')
+      return( c - '0');
+   return( -1);
+}
+
+
+static inline int   MulleUTF8StringGetUUIDVariant( unsigned char s[ MulleUUIDStringLength])
+{
+   int   c;
+
+   c = s[ 19];
+   if( c >= '0' && c <='9')
+      c = c - '0';
+   else
+      if( c >= 'a' && c <='f')
+         c = c - 'a' + 10;
+      else
+         if( c >= 'A' && c <='F')
+            c = c - 'A' + 10;
+         else
+            return(-1 );
+
+   return( c >> 2);
+}
+
