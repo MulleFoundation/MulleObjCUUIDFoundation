@@ -62,3 +62,5 @@ public-classes.txt
 .mulle-make-build-dir
 version.old
 .idea/
+cmake-build-*/
+.ackrc

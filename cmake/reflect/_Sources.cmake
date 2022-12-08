@@ -11,6 +11,7 @@ endif()
 # contents selected with patternfile ??-source--sources
 #
 set( SOURCES
+src/MulleObjCUUIDFoundation.m
 src/NSUUID.m
 )
 
