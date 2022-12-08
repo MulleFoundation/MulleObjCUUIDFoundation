@@ -9,6 +9,7 @@ if( NOT __CMAKE_TWEAKS_C_CMAKE__)
       message( STATUS "# Include \"${CMAKE_CURRENT_LIST_FILE}\"" )
    endif()
 
+   # https://cmake.org/cmake/help/v3.1/policy/CMP0054.html
    cmake_policy( SET CMP0054 NEW)
 
    # makes nicer Xcode projects, I see no detriment
@@ -56,9 +57,3 @@ if( NOT __CMAKE_TWEAKS_C_CMAKE__)
    include( CMakeTweaksAuxC OPTIONAL)
 
 endif()
-
-
-# extension : mulle-c/c-cmake
-# directory : project/all
-# template  : .../CMakeTweaksC.cmake
-# Suppress this comment with `export MULLE_SDE_GENERATE_FILE_COMMENTS=NO`
