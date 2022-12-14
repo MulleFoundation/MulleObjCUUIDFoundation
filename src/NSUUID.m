@@ -9,10 +9,10 @@
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
 //
-//  Redistributions of source code must retain the above copyright notice, this
+//  Redistribution of source code must retain the above copyright notice, this
 //  list of conditions and the following disclaimer.
 //
-//  Redistributions in binary form must reproduce the above copyright notice,
+//  Redistribution in binary form must reproduce the above copyright notice,
 //  this list of conditions and the following disclaimer in the documentation
 //  and/or other materials provided with the distribution.
 //
@@ -66,7 +66,7 @@ static struct
 
 void   MulleGenerateUUIDBytes( unsigned char bytes[ 16])
 {
-  union { unsigned char b[16]; uint64_t word[2]; } s;
+   union { unsigned char b[16]; uint64_t word[2]; } s;
 
    mulle_thread_mutex_do( Self._lock)
    {
@@ -77,13 +77,13 @@ void   MulleGenerateUUIDBytes( unsigned char bytes[ 16])
          if( uuid4_init() == UUID4_EFAILURE)
             abort();
 
-     /* get random */
-     s.word[ 0] = xorshift128plus(seed);
-     s.word[ 1] = xorshift128plus(seed);
+      /* get random */
+      s.word[ 0] = xorshift128plus(seed);
+      s.word[ 1] = xorshift128plus(seed);
 
-     memcpy( bytes, &s.word[ 0], 16);
+      memcpy( bytes, &s.word[ 0], 16);
 
-     MulleUUIDBytesZeroVersioningBits( bytes);
+      MulleUUIDBytesZeroVersioningBits( bytes);
    }
 }
 
@@ -94,30 +94,30 @@ static const char template[] = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
 
 void   MulleUUIDBytesToUTF8String( unsigned char bytes[ 16], char output[ 37])
 {
-  static const char chars[] = "0123456789abcdef";
-  char  *p;
-  char  *dst;
-  int   i, n;
+   static const char chars[] = "0123456789abcdef";
+   char  *p;
+   char  *dst;
+   int   i, n;
 
-  dst = output;
-  i   = 0;
-  for( p = (char *) template; *p; p++)
-  {
-    n = bytes[ i >> 1];
-    n = (i & 1) ? (n & 0xf) : (n >> 4);
-    switch (*p)
-    {
-      case '4'  : *dst = *p;                    i++; break;
-      case 'x'  : *dst = chars[n];              i++; break;
-      case 'y'  : *dst = chars[(n & 0x3) + 8];  i++; break;
-      default   : *dst = *p;
-    }
-    dst++;
-  }
-  *dst++ = '\0';
+   dst = output;
+   i   = 0;
+   for( p = (char *) template; *p; p++)
+   {
+      n = bytes[ i >> 1];
+      n = (i & 1) ? (n & 0xf) : (n >> 4);
+      switch (*p)
+      {
+      case '4' : *dst = *p;                   i++; break;
+      case 'x' : *dst = chars[n];             i++; break;
+      case 'y' : *dst = chars[(n & 0x3) + 8]; i++; break;
+      default  : *dst = *p;
+      }
+      dst++;
+   }
+   *dst++ = '\0';
 
-  assert( dst == &output[ 37]);
-  assert( i == 32); // 32 nybbles only used
+   assert( dst == &output[ 37]);
+   assert( i == 32); // 32 nybbles only used
 }
 
 
@@ -135,21 +135,21 @@ static char  tonybble( char c)
 
 int   MulleUTF8StringToUUIDBytes( char input[ 37], unsigned char bytes[ 16])
 {
-  static const char template[] = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
-  char              *p;
-  char              *src;
-  unsigned char     *dst;
-  int               i, n;
-  unsigned char     value;
-  char              nybbles[ 32];
+   static const char template[] = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
+   char              *p;
+   char              *src;
+   unsigned char     *dst;
+   int               i, n;
+   unsigned char     value;
+   char              nybbles[ 32];
 
-  src = input;
-  i   = 0;
+   src = input;
+   i   = 0;
 
-  for( p = (char *) template; *p; p++)
-  {
-    switch (*p)
-    {
+   for( p = (char *) template; *p; p++)
+   {
+      switch (*p)
+      {
       default  :
          if( *p != *src++)
             goto fail;
@@ -176,17 +176,17 @@ int   MulleUTF8StringToUUIDBytes( char input[ 37], unsigned char bytes[ 16])
             goto fail;
          i++;
          break;
-    }
-  }
+      }
+   }
 
-  // compose nybbles as bytes
-  for( i = 0; i < 16; i++)
-     bytes[ i] = (nybbles[ i * 2] << 4) | nybbles[ i * 2 + 1];
+   // compose nybbles as bytes
+   for( i = 0; i < 16; i++)
+      bytes[ i] = (nybbles[ i * 2] << 4) | nybbles[ i * 2 + 1];
    return( 0);
 
 fail:
    memset( bytes, 0, 16);
-  return( -1);
+   return( -1);
 }
 
 
@@ -264,6 +264,7 @@ fail:
 {
    return( MulleUUIDBytesLength);
 }
+
 
 - (void *) bytes
 {
