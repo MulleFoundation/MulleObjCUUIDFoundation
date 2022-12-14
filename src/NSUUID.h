@@ -113,7 +113,7 @@ static inline int   MulleUTF8StringGetUUIDVariant( unsigned char s[ MulleUUIDStr
          if( c >= 'A' && c <='F')
             c = c - 'A' + 10;
          else
-            return(-1 );
+            return( -1);
 
    return( c >> 2);
 }
