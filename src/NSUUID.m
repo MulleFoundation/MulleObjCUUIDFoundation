@@ -40,8 +40,9 @@
 static int uuid4_init(void);
 static void uuid4_generate(char *dst);
 
-
-#include "uuid4/src/uuid4.c"
+// this must be included like this for clib inclusion on MulleFoundationBase
+// to find it fix it in CMakeLists.txt
+#include "uuid4.c"
 
 
 @implementation NSUUID

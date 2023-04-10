@@ -1,0 +1,5 @@
+This class generates uuid4 NSStrings and NSData. The class will not accept
+any old 16 byte array as an UUID. Read [Universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+about *variant* and *version* bits. These bits must be cleared in the incoming
+bytes. You only have to worry about this, if you are getting foreign UUIDs.
+
