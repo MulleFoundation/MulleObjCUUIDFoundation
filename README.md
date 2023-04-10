@@ -8,37 +8,54 @@ about *variant* and *version* bits. These bits must be cleared in the incoming
 bytes. You only have to worry about this, if you are getting foreign UUIDs.
 
 
-#### Example:
+| Release Version                                       | Release Notes
+|-------------------------------------------------------|--------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//MulleObjCUUIDFoundation.svg?branch=release) [![Build Status](https://github.com//MulleObjCUUIDFoundation/workflows/CI/badge.svg?branch=release)](//github.com//MulleObjCUUIDFoundation/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
-``` objc
-mulle_printf( "%@\n", [NSUUID uuid]);
+
+
+
+
+## Requirements
+
+|   Requirement         | Release Version  | Description
+|-----------------------|------------------|---------------
+| [MulleObjCValueFoundation](https://github.com/MulleFoundation/MulleObjCValueFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 💶 Value classes NSNumber, NSString, NSDate, NSData
+| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 📒 Lists mulle-objc runtime information contained in executables.
+
+### You are here
+
+![Overview](overview.dot.svg)
+
+## Add
+
+Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCUUIDFoundation to your project:
+
+``` sh
+mulle-sde add github:MulleFoundation/MulleObjCUUIDFoundation
 ```
 
+## Install
 
-## mulle-sde
+### Install with mulle-sde
 
-This is a [mulle-sde](//github.com/mulle-sde) project. mulle-sde combines
-recursive package management with cross-platform builds via **cmake**:
+Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCUUIDFoundation and all dependencies:
 
-| Action  | Command                               | Description               |
-|---------|---------------------------------------|---------------------------|
-| Build   | `mulle-sde craft [--release/--debug]` | Builds into local `kitchen` folder |
-| Add     | `mulle-sde dependency add --c --github MulleFoundation MulleObjCUUIDFoundation` | Add MulleObjCUUIDFoundation to another mulle-sde project as a dependency |
-| Install | `mulle-sde install --prefix /usr/local https://github.com/MulleFoundation/MulleObjCUUIDFoundation.git` | Like `make install` |
-
+``` sh
+mulle-sde install --prefix /usr/local \
+   https://github.com/MulleFoundation/MulleObjCUUIDFoundation/archive/latest.tar.gz
+```
 
 ### Manual Installation
 
-
 Install the requirements:
 
-| Requirements                                      | Description             |
-|---------------------------------------------------|-------------------------|
-| [uuid4](//github.com/rxi/uuid4)                   | Place into `src`        |
-| [MulleObjCValueFoundation](//github.com/MulleFoundation/MulleObjCValueFoundation) |  |
+| Requirements                                 | Description
+|----------------------------------------------|-----------------------
+| [MulleObjCValueFoundation](https://github.com/MulleFoundation/MulleObjCValueFoundation)             | 💶 Value classes NSNumber, NSString, NSDate, NSData
+| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
 
-
-Install into `/usr/local`:
+Install **MulleObjCUUIDFoundation** into `/usr/local` with [cmake](https://cmake.org):
 
 ``` sh
 cmake -B build \
@@ -49,10 +66,8 @@ cmake --build build --config Release &&
 cmake --install build --config Release
 ```
 
+## Author
 
-<!--
-extension : mulle-sde/sde
-directory : demo/library
-template  : .../README.md
-Suppress this comment with `export MULLE_SDE_GENERATE_FILE_COMMENTS=NO`
--->
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+
+

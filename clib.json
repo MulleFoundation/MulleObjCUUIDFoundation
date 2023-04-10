@@ -1,0 +1,34 @@
+{
+   "name" : "MulleObjCUUIDFoundation",
+   "version" : "0.0.1",
+   "description" : "MulleObjCUUIDFoundation provides NSUUID",
+   "keywords" : [],
+   "license" : "BSD-3-Clause",
+   "repo" : "MulleFoundation/MulleObjCUUIDFoundation",
+   "src" : [
+      "src/generic/import-private.h",
+      "src/generic/import.h",
+      "src/generic/include-private.h",
+      "src/generic/include.h",
+      "src/generic/MulleObjCLoader+MulleObjCUUIDFoundation.h",
+      "src/generic/MulleObjCLoader+MulleObjCUUIDFoundation.m",
+      "src/MulleObjCUUIDFoundation.h",
+      "src/MulleObjCUUIDFoundation.m",
+      "src/NSUUID.h",
+      "src/NSUUID.m",
+      "src/reflect/objc-loader.inc",
+      "src/reflect/_MulleObjCUUIDFoundation-export.h",
+      "src/reflect/_MulleObjCUUIDFoundation-import-private.h",
+      "src/reflect/_MulleObjCUUIDFoundation-import.h",
+      "src/reflect/_MulleObjCUUIDFoundation-include-private.h",
+      "src/reflect/_MulleObjCUUIDFoundation-include.h",
+      "src/reflect/_MulleObjCUUIDFoundation-provide.h",
+      "src/uuid4/src/uuid4.c",
+      "src/uuid4/src/uuid4.h"
+   ],
+   "dependencies" : {
+      "MulleFoundation/MulleObjCValueFoundation": "*",
+      "rxi/uuid4": "*",
+      "mulle-objc/mulle-objc-list": "*"
+   }
+}
