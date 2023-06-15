@@ -16,6 +16,7 @@
       "src/MulleObjCUUIDFoundation.m",
       "src/NSUUID.h",
       "src/NSUUID.m",
+      "src/reflect/objc-loader.inc",
       "src/reflect/_MulleObjCUUIDFoundation-export.h",
       "src/reflect/_MulleObjCUUIDFoundation-import-private.h",
       "src/reflect/_MulleObjCUUIDFoundation-import.h",
