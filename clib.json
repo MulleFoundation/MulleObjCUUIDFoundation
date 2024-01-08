@@ -1,7 +1,7 @@
 {
    "name" : "MulleObjCUUIDFoundation",
-   "version" : "0.0.2",
-   "description" : "MulleObjCUUIDFoundation provides NSUUID",
+   "version" : "0.0.3",
+   "description" : "🛂 MulleObjCUUIDFoundation provides NSUUID",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/MulleObjCUUIDFoundation",
@@ -23,6 +23,7 @@
       "src/reflect/_MulleObjCUUIDFoundation-include-private.h",
       "src/reflect/_MulleObjCUUIDFoundation-include.h",
       "src/reflect/_MulleObjCUUIDFoundation-provide.h",
+      "src/reflect/_MulleObjCUUIDFoundation-versioncheck.h",
       "src/uuid4/src/uuid4.c",
       "src/uuid4/src/uuid4.h"
    ],

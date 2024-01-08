@@ -57,5 +57,6 @@ set( PUBLIC_HEADERS
 src/MulleObjCUUIDFoundation.h
 src/NSUUID.h
 src/generic/MulleObjCLoader+MulleObjCUUIDFoundation.h
+src/reflect/_MulleObjCUUIDFoundation-versioncheck.h
 )
 
