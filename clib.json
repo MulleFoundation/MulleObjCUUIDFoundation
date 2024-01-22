@@ -29,7 +29,7 @@
    ],
    "dependencies" : {
       "MulleFoundation/MulleObjCValueFoundation": "*",
-      "rxi/uuid4": "*",
+      "MulleFoundation/uuid4": "*",
       "mulle-objc/mulle-objc-list": "*"
    }
 }
