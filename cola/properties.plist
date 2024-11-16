@@ -3,6 +3,8 @@
    {
       description="🛂 MulleObjCUUIDFoundation provides NSUUID";
       domain="github";
+      language="c";
+      dialect="objc";
       name="MulleObjCUUIDFoundation";
       user="MulleFoundation";
       repo="MulleObjCUUIDFoundation";
@@ -34,8 +36,8 @@
          domain="github";
          name="src/uuid4";
          repo="uuid4";
-         url="https://github.com/rxi/uuid4";
-         user="rxi";
+         url="https://github.com/MulleFoundation/uuid4";
+         user="MulleFoundation";
       }
    );
 }
