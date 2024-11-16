@@ -33,7 +33,7 @@
 <!-- uuid4 -->
 <g id="node3" class="node">
 <title>uuid4</title>
-<g id="a_node3"><a xlink:href="https://github.com/rxi/uuid4" xlink:title="uuid4">
+<g id="a_node3"><a xlink:href="https://github.com/MulleFoundation/uuid4" xlink:title="uuid4">
 <polygon fill="lightgrey" stroke="black" points="287.5,-36 230.5,-36 230.5,0 287.5,0 287.5,-36"/>
 <text text-anchor="middle" x="259" y="-14.3" font-family="Times,serif" font-size="14.00">uuid4</text>
 </a>

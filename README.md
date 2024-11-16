@@ -31,15 +31,31 @@ bytes. You only have to worry about this, if you are getting foreign UUIDs.
 
 ## Add
 
+**This project is a component of the [MulleFoundation](//github.com/MulleFoundation/MulleFoundation) library.
+As such you usually will *not* add or install it individually, unless you
+specifically do not want to link against `MulleFoundation`.**
+
+
+### Add as an individual component
+
 Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCUUIDFoundation to your project:
 
 ``` sh
 mulle-sde add github:MulleFoundation/MulleObjCUUIDFoundation
 ```
 
-## Install
+To only add the sources of MulleObjCUUIDFoundation with dependency
+sources use [clib](https://github.com/clibs/clib):
 
-### Install with mulle-sde
+
+``` sh
+clib install --out src/MulleFoundation MulleFoundation/MulleObjCUUIDFoundation
+```
+
+Add `-isystem src/MulleFoundation` to your `CFLAGS` and compile all the sources that were downloaded with your project.
+
+
+## Install
 
 Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCUUIDFoundation and all dependencies:
 
@@ -48,7 +64,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/MulleObjCUUIDFoundation/archive/latest.tar.gz
 ```
 
-### Manual Installation
+### Legacy Installation
 
 Install the requirements:
 
