@@ -11,7 +11,7 @@ bytes. You only have to worry about this, if you are getting foreign UUIDs.
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCUUIDFoundation.svg?branch=release) [![Build Status](https://github.com/MulleFoundation/MulleObjCUUIDFoundation/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCUUIDFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCUUIDFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCUUIDFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCUUIDFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
