@@ -27,5 +27,5 @@ src/NSUUID.m
 # contents selected with patternfile ??-source--stage2-sources
 #
 set( STAGE2_SOURCES
-src/generic/MulleObjCLoader+MulleObjCUUIDFoundation.m
+src/generic/MulleObjCDeps+MulleObjCUUIDFoundation.m
 )

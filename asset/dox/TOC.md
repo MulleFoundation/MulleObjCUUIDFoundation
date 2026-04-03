@@ -1,4 +1,5 @@
 # MulleObjCUUIDFoundation Library Documentation for AI
+<!-- Keywords: uuid, identifiers -->
 
 ## 1. Introduction & Purpose
 
