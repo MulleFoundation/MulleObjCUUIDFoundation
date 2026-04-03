@@ -8,11 +8,11 @@ int   main( int argc, char *argv[])
 
    memset( bytes, 0, sizeof( MulleUUIDBytesLength));
    uuid = [[[NSUUID alloc] initWithUUIDBytes:bytes] autorelease];
-   printf( "%s\n", [uuid UTF8String]);
+   mulle_printf( "%s\n", [uuid UTF8String]);
    [uuid getUUIDBytes:bytes];
 
    uuid = [[[NSUUID alloc] initWithUUIDBytes:bytes] autorelease];
-   printf( "%s\n", [uuid UTF8String]);
+   mulle_printf( "%s\n", [uuid UTF8String]);
 
    return( 0);
 }
