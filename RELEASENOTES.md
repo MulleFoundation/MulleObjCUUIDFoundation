@@ -1,27 +1,15 @@
-### 0.0.7
+### 0.0.8
 
-Various small improvements
 
-### 0.0.6
 
-Various small improvements
 
-### 0.0.5
 
-Various small improvements
 
-### 0.0.4
 
-Various small improvements
 
-### 0.0.3
 
-* Various small improvements
 
-### 0.0.2
-
-* Various small improvements
-
-### 0.0.1
-
-* Various small improvements
+* rename MulleObjCLoader category to MulleObjCDeps so generated dependency declarations are provided via MulleObjCDeps
+* switch generated include from objc-loader.inc to objc-deps.inc and update reflect headers to match
+* export macro widened to export symbols when built as part of foundation base
+* use `mulle_fprintf` for NSUUID error output for consistent project logging
