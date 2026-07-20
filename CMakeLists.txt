@@ -8,7 +8,7 @@
 #
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleObjCUUIDFoundation VERSION 0.0.8 LANGUAGES C)
+project( MulleObjCUUIDFoundation VERSION 0.0.9 LANGUAGES C)
 
 
 set( MULLE_PROJECT_TYPE "Library")
