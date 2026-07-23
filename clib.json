@@ -24,7 +24,9 @@
       "src/reflect/_MulleObjCUUIDFoundation-include-private.h",
       "src/reflect/_MulleObjCUUIDFoundation-include.h",
       "src/reflect/_MulleObjCUUIDFoundation-provide.h",
-      "src/reflect/_MulleObjCUUIDFoundation-versioncheck.h"
+      "src/reflect/_MulleObjCUUIDFoundation-versioncheck.h",
+      "src/uuid4/src/uuid4.c",
+      "src/uuid4/src/uuid4.h"
    ],
    "dependencies" : {
       "MulleFoundation/MulleObjCValueFoundation": "*",

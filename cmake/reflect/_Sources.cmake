@@ -8,6 +8,14 @@ if( MULLE_TRACE_INCLUDE)
 endif()
 
 #
+# contents selected with patternfile ??-source--clib
+#
+set( CLIB
+src/uuid4/src/uuid4.c
+src/uuid4/src/uuid4.h
+)
+
+#
 # contents selected with patternfile ??-source--sources
 #
 set( SOURCES
