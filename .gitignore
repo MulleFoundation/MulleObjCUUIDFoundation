@@ -83,3 +83,8 @@ test*/**/*.test.*
 *.tmp.*
 *.test.*
 .idea
+.mulle/share/sde/howto
+test/.mulle/share/sde/howto
+.kiro/
+TODO.md
+REVIEW.md

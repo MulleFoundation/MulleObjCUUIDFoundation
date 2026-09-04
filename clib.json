@@ -1,12 +1,12 @@
 {
    "name" : "MulleObjCUUIDFoundation",
-   "version" : "0.0.9",
+   "version" : "0.0.10",
    "description" : "🛂 MulleObjCUUIDFoundation provides NSUUID",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/MulleObjCUUIDFoundation",
    "src" : [
-      "asset/dox/TOC.md",
+      "asset/dox/api/toc/index.md",
       "src/generic/import-private.h",
       "src/generic/import.h",
       "src/generic/include-private.h",
