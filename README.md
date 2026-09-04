@@ -16,6 +16,11 @@ bytes. You only have to worry about this, if you are getting foreign UUIDs.
 
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
+
 
 
 ## Requirements
