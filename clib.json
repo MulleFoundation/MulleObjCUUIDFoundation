@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCUUIDFoundation",
-   "version" : "0.0.10",
+   "version" : "0.0.11",
    "description" : "🛂 MulleObjCUUIDFoundation provides NSUUID",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -31,6 +31,6 @@
    "dependencies" : {
       "MulleFoundation/MulleObjCValueFoundation": "*",
       "MulleFoundation/uuid4": "*",
-      "mulle-objc/mulle-objc-list": "*"
+      "mulle-objc/mulle-objc-tools": "*"
    }
 }
