@@ -42,8 +42,8 @@
 <!-- MulleObjCUUIDFoundation&#45;&gt;uuid4 -->
 <g id="edge2" class="edge">
 <title>MulleObjCUUIDFoundation&#45;&gt;uuid4</title>
-<path fill="none" stroke="black" d="M200.29,-71.7C209.33,-63.37 220.34,-53.22 230.28,-44.07"/>
-<polygon fill="black" stroke="black" points="232.57,-46.72 237.55,-37.37 227.83,-41.57 232.57,-46.72"/>
+<path fill="none" stroke="#666666" d="M200.29,-71.7C209.88,-62.86 221.69,-51.99 232.08,-42.41"/>
+<ellipse fill="#666666" stroke="#666666" cx="235.36" cy="-39.4" rx="4" ry="4"/>
 </g>
 </g>
 </svg>
